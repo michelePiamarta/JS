@@ -17,7 +17,7 @@ public class Libro {
         this.costo = costo;
         this.autore = autore;
         this.titolo = titolo;
-        this.anno = 10;
+        this.anno = 100;
     }
     
     
