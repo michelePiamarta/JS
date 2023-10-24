@@ -8,7 +8,24 @@ package Geometry;
  *
  * @author michele.piamarta
  */
-public class Figura {
-    String nome; //identificatore univoco
-    Punto centro;//
+public abstract class Figura {
+    protected String nome; //identificatore univoco
+    protected Punto centro;
+    public Figura(String nome,Punto centro){
+        this.nome = nome;
+        this.centro = centro;
+    }
+    abstract double getArea();
+    abstract double getPerimetro();
+    public Punto getCentro(){
+        return centro;
+    }
+    public String getNome(){
+        return nome;
+    }
+    
+    protected void checkLato(double lato) throws Exception{
+        if(lato<=0)
+            throw new Exception("la lunghezza del lato non può essere minore o uguale a 0");
+    }
 }

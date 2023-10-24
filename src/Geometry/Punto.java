@@ -9,5 +9,10 @@ package Geometry;
  * @author michele.piamarta
  */
 public class Punto {
-    int x,y;
+    protected double x,y;
+    
+    public Punto(double x,double y){
+        this.x = x;
+        this.y = y;
+    }
 }

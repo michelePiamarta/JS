@@ -10,4 +10,19 @@ package Geometry;
  */
 public class Quadrato extends Rettangolo{
     
+    public Quadrato(double lato, String nome, Punto centro){
+        super(lato, lato, nome, centro);
+    }
+    
+    public double getArea(){
+        return super.getArea();
+    }
+    
+    public double getPerimetro(){
+        return super.getPerimetro();
+    }
+
+    
+    
+    
 }
